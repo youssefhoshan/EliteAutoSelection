@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <title>Prijzen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="carrousel.js" defer></script>
+</head>
+
+<body>
+    <div class="banner">
+        <header>
+            <div class="navbar">
+                <a href="homepage.html"><img src="./images/logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="shoppagina.html">Assortiment</a></li>
+                    <li><a href="informatie.html">Informatie</a></li>
+                    <li><a href="./loginsystem/login.php">Login</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+
+            <h1 class="h1-product">Lamborghini Murcielago</h1>
+            <div class="body-container">
+                
+
+                    <div class="content-shop">
+                    <div id="first"><img src="./images/1100xxs.jpg"/> </div>
+                    <div id="second"><img src="./images/1100xxs2.jpg"/> </div>
+                    <div id="third"><img src="./images/1100xxs3.jpg"/> </div>
+                </div>
+
+                <div class="container-shop">
+                    <button class="b1" id="b1" onClick="myFunction()">1</button>
+                    <button class="b2" id="b2" onClick="myFunction2()">2</button>
+                    <button class="b3" id="b3" onClick="myFunction3()">3</button>
+                  </div>
+
+                  <div class="container-purchase">
+                    <form action="purchase.php" method="post">
+
+                        <label for="product">Select Product:</label>
+                        <select id="product" name="product">
+                            <option value="Product 1">Bouquette</option>
+                            <option value="Product 2">Special Bouquette</option>
+                            <option value="Product 3">Premium Bouquette</option>
+                        </select>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1">
+                        <input type="submit" value="Purchase">
+                    </form>
+                   
+                  </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="column">
+                <div class="title">Mijn gegevens</div>
+                <ul>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="title">Service</div>
+                <ul>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="title">Contact</div>
+                <ul>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="title">Informatie</div>
+                <ul>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="title">Categorie&#235;n</div>
+                <ul>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                    <li>Ipsum</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
