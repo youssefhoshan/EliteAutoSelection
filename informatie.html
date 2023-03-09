@@ -1,12 +1,14 @@
 <html>
 
+
 <head>
-    <title>Flower Power</title>
+    <title>FAQ</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="scroll.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    
 </head>
-
 <body>
     <div class="banner">
         <header>
@@ -16,7 +18,7 @@
                     <ul>
                         <li><a href="homepage.html">Home</a></li>
                         <li><a href="shoppagina.html">Assortiment</a></li>
-                        <li><a href="informatie.html">Informatie</a></li>
+                        <li><a href="Informatie.html">FAQ</a></li>
                         <li><a href="./loginsystem/login.php">Login</a></li>
                     </ul>
                 </div>
@@ -25,18 +27,20 @@
         <main>
             <div class="body-container">
                 <div class="content">
-                    <h1 class="typing-header">Elite Auto Selection</h1>
-                    <p>Welkom bij Elite Auto Collection. High-end auto's, deskundige verkoopteams, kwaliteit en uitmuntendheid. Bezoek onze showroom.<br> klik de knop hieronder voor meer info!<br>
+                    <h1 class="typing-header">Veel Gestelde Vragen</h1>
+                    <p>Bekijk hieronder de veelgestelde vragen.<br> Mocht het antwoord op uw vraag er niet tussen zitten stuur ons dan gerust een mailtje op <a href="Elite@EAC.com" style="color: lightblue;">Elite@EAC.com</a> <br>
                     </p>
                     <div>
-                        <a class="buybutton" href="shoppagina.html"><button type="button"><span></span>KOOP
-                                NU</button></a>
-                        <a class="buybutton" href="informatie.html"><button type="button"><span></span>MEER
-                                INFO</button></a>
+
+                        <a class="buybutton" href="#footer" onclick="scrollToFooter()">
+                            <button type="button">
+                                <span></span>MEER INFO
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="containertest">
+            <div class="containertest" id="naardit">
                 <div class="sectiontest1">
                     <a href="informatie.html"><img src="images/winkel.jpg" alt="image1" class="winkel"></a>
                     <br>
@@ -96,9 +100,6 @@
           </div>
         </div>
       </footer>
-
-
-
+      
 </body>
-
 </html>
