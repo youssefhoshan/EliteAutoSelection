@@ -28,6 +28,6 @@ Contributing
 
 We welcome contributions from anyone interested in improving this project. Please fork this repository and create a pull request with your changes. Before submitting a pull request, please make sure your code follows our coding guidelines and passes all tests.
 
-#License
+# License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
