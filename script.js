@@ -5,7 +5,7 @@ const splitText = strText.split('');
 text.textContent = '';
 
 splitText.forEach((letter, index) => {
-  setTimeout(() => {
-    text.textContent += letter;
-  }, 100 * index);
+    setTimeout(() => {
+        text.textContent += letter;
+    }, 100 * index);
 });

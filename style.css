@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -37,7 +37,7 @@ body {
     padding: 3px;
     background-color: #000000;
     color: grey;
-    margin-top:20%;
+    margin-top: 20%;
 }
 
 .column {
@@ -124,7 +124,7 @@ li {
 
 .content h1 {
     font-size: 70px;
-    
+
     display: flex;
     justify-content: center;
 }
@@ -343,7 +343,7 @@ label {
 
 input,
 .btn {
-    
+
     padding: 12px;
     border: none;
     border-radius: 4px;
@@ -487,12 +487,15 @@ input[type=submit]:hover {
 
 a.hometext {
     text-decoration: wavy;
-    color: black; /* initial color of the text */
-    transition: color 0.2s; /* smooth transition over 0.2 seconds */
+    color: black;
+    /* initial color of the text */
+    transition: color 0.2s;
+    /* smooth transition over 0.2 seconds */
 }
 
 a.hometext:hover {
-    color: crimson; /* color of the text when hovered over */
+    color: crimson;
+    /* color of the text when hovered over */
 }
 
 
@@ -871,9 +874,9 @@ button.button-reservering:hover {
 
 .containertest {
     display: flex;
-   background: black;
-   padding-top: 20px;
-   padding-bottom: 20px;
+    background: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .sectiontest1 {
@@ -996,11 +999,11 @@ button.button-reservering:hover {
     text-decoration: none;
 }
 
-.form-group{
+.form-group {
     margin-top: 20px;
 }
 
-.form-group label{
+.form-group label {
     color: black;
 }
 
@@ -1033,7 +1036,7 @@ button.button-reservering:hover {
 
 .product img {
     width: 100%;
-    
+
     border-radius: 10px;
 }
 
@@ -1050,19 +1053,19 @@ button.button-reservering:hover {
 }
 
 /* test */
-  
-  .top-row {
+
+.top-row {
     display: flex;
     justify-content: center;
-  }
-  
-  .bottom-row {
+}
+
+.bottom-row {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-  }
-  
-  .product {
+}
+
+.product {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1075,27 +1078,27 @@ button.button-reservering:hover {
     box-shadow: 5px 5px 10px crimson;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-  }
-  
-  .product:hover {
+}
+
+.product:hover {
     transform: scale(1.1);
-  }
-  
-  .product-image {
+}
+
+.product-image {
     width: 100%;
     height: 200px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     overflow: hidden;
-  }
-  
-  .product-image img {
+}
+
+.product-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .product-description {
+}
+
+.product-description {
     padding: 10px;
     margin-bottom: 5%;
     font-size: 18px;
@@ -1103,17 +1106,17 @@ button.button-reservering:hover {
     color: #fff;
     text-decoration: underline;
     text-decoration-color: crimson;
-  }
-  
-  .product-price {
-    
+}
+
+.product-price {
+
     font-size: 16px;
     color: #fff;
     text-decoration: underline;
     margin-bottom: 2%;
-  }
-  
-  .price-column-shop {
+}
+
+.price-column-shop {
     display: flex;
     margin-top: 15%;
     text-align: center;
@@ -1122,7 +1125,7 @@ button.button-reservering:hover {
     justify-content: flex-start;
 }
 
-#myGallery{
+#myGallery {
     width: 500px;
     height: 300px;
     overflow: hidden;
@@ -1139,7 +1142,9 @@ button.button-reservering:hover {
 }
 
 
-.b1, .b2, .b3{
+.b1,
+.b2,
+.b3 {
     display: flex;
     background-color: rgb(255, 255, 255);
     width: 28px;
@@ -1148,81 +1153,86 @@ button.button-reservering:hover {
     margin-left: 20px;
     cursor: pointer;
 
-  }
+}
 
 
-  
-.container-shop{
+
+.container-shop {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container-shop-test{
+
+.container-shop-test {
     display: flex;
     justify-content: center;
     align-items: center;
     background: black;
 }
 
-.content-shop{
+.content-shop {
     display: flex;
     justify-content: center;
     background: #00000082;
 }
-  
-  #second, #third {
+
+#second,
+#third {
     display: none
-  }
-  
-.container-purchase {
-    
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        background: black;
-        
 }
- 
-.h1-product{
+
+.container-purchase {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+
+}
+
+.h1-product {
     display: flex;
     justify-content: center;
     color: white;
     margin-bottom: 5px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     text-decoration: underline;
     text-decoration-color: crimson;
 }
 
-.kilometer{
+.kilometer {
     padding: 10px;
     font-size: 14px;
     color: #fff;
     text-decoration: underline;
 }
 
-.year{
+.year {
     margin-bottom: 5%;
     font-size: 12px;
     color: #fff;
     text-decoration: underline;
     text-decoration-color: crimson;
 }
-.first{
-    height: 450px;
-    width: 100%;
-}
-.second{
-    height: 450px;
-    width: 100%;
-}
-.third{
+
+.first {
     height: 450px;
     width: 100%;
 }
 
-.button-back-product{
+.second {
+    height: 450px;
+    width: 100%;
+}
+
+.third {
+    height: 450px;
+    width: 100%;
+}
+
+.button-back-product {
     display: flex;
     padding: 1px;
     color: white;
@@ -1235,8 +1245,8 @@ button.button-reservering:hover {
     border-width: 1px;
 }
 
-.button-back-product:hover{
-   border-color: crimson;
+.button-back-product:hover {
+    border-color: crimson;
 
 }
 
@@ -1245,45 +1255,46 @@ button.button-reservering:hover {
 ::-webkit-scrollbar {
     width: 14px;
     height: 8px;
-  }
-  
-  /* background color of the scrollbar track */
-  ::-webkit-scrollbar-track {
+}
+
+/* background color of the scrollbar track */
+::-webkit-scrollbar-track {
     background: #252525;
-  }
-  
-  /* color of the scrollbar thumb */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* color of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
     background-color: crimson;
     border-radius: 10px;
     border: 2px solid black;
-  }
-  
-  /* color of the scrollbar thumb when hovering */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* color of the scrollbar thumb when hovering */
+::-webkit-scrollbar-thumb:hover {
     background-color: #555;
-  }
+}
 
 
 
-  .typing-header {
+.typing-header {
     overflow: hidden;
     white-space: nowrap;
     font-size: 2rem;
     animation: typing 1s steps(500) forwards;
     animation-delay: 1s;
-  }
-  
-  @keyframes typing {
+}
+
+@keyframes typing {
     from {
-      width: 0;
+        width: 0;
     }
+
     to {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-.info-h1{
+}
+
+.info-h1 {
     text-align: center;
     color: white;
     background: black;
@@ -1294,5 +1305,4 @@ button.button-reservering:hover {
 .footer a:hover {
     opacity: 0.7;
     transition: 0.2s;
-  }
-  
+}
