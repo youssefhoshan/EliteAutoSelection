@@ -1,7 +1,3 @@
-<?php 
-session_start();
-require_once('db_connect.php');
-?>
 <html>
 
 <head>
@@ -14,7 +10,7 @@ require_once('db_connect.php');
 <body>
     <div class="banner">
         <header>
-            <div class="navbar">
+        <div class="navbar">
                 <a href="homepage.php"><img src="./images/logo.png" class="logo"></a>
                 <ul>
                     <li><a href="homepage.php">Home</a></li>
@@ -25,33 +21,85 @@ require_once('db_connect.php');
             </div>
         </header>
         <main>
+            <section class="category">
             <div class="body-container-shop">
                 <div class="container-shop">
+
                     <div class="price-column-shop">
-                            <?php
-                            $show_products = $pdo->prepare("SELECT * FROM `assortiment`");
-                            $show_products->execute();
-                            if ($show_products->rowCount() > 0) {
-                                while ($fetch_products = $show_products->fetch(PDO::FETCH_ASSOC)) {
-                                    ?>
-                            <div class="product">
-                            <a href="product1.html">
-                                <img src="db_auto_images/<?= $fetch_products['foto1']; ?>" alt="Luxury Car">
-                                <p class="product-description"><?= $fetch_products['product']; ?></p>
-                                <p class="year"> <i class="fa fa-car"></i> <b><?= $fetch_products['jaartal']; ?></b> 
-                                    <br> <i class="fa fa-road"></i><?= $fetch_products['kilometers']; ?>
+                        <div class="product">
+                            <a href="product.php?category=1">
+                                <img src="db_auto_images/lambo_m1.jpg" alt="Luxury Car 1">
+                                <p class="product-description">Lamborghini Murcielago
                                 </p>
-                                <p class="product-price"><?= $fetch_products['prijs']; ?></p>
-                            </div>
-                                    <?php
-                                }
-                            } else {
-                                echo '<p class="empty">Nog geen producten toegevoegd</p>';
-                            }
-                            ?>
-                    </div>
-                </div>
-            </div>
+                                <p class="year"> <i class="fa fa-car"></i> <b>2007</b> <br> <i class="fa fa-road"></i>
+                                    7.000 km</p>
+                                <p class="product-price"> &#8364;309.402</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="product.php?category=2">
+                                <img src="db_auto_images/porsche1.png" alt="Porsche">
+                                <p class="product-description">Porsche 911 Turbo S <br>Cabriolet</p>
+                                <p class="year"> <i class="fa fa-car"></i> <b>2023</b> <br> <i class="fa fa-road"></i>
+                                    50.000 km</p>
+                                <p class="product-price"> &#8364;265,000</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="product.php?category=3">
+                                <img src="db_auto_images/bugatti1.png" alt="Luxury Car 3">
+                                <p class="product-description">Bugatti Chiron AWD</p>
+                                <p class="year"> <i class="fa fa-car"></i> <b>2018</b> <br> <i class="fa fa-road"></i>
+                                    200 km</p>
+                                <p class="product-price"> &#8364;2.600,000</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="product.php?category=4">
+                                <img src="db_auto_images/ferrari1.png" alt="Luxury Car 4">
+                                <p class="product-description">Ferrari 812 Superfast RWD</p>
+                                <p class="year"> <i class="fa fa-car"></i> <b>2019</b> <br> <i class="fa fa-road"></i>
+                                    8.000 km</p>
+                                <p class="product-price"> &#8364;436,280</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="product.php?category=5">
+                                <img src="db_auto_images/mclaren1.png" alt="Luxury Car 5">
+                                <p class="product-description">McLaren P1 GTR</p>
+                                <p class="year"> <i class="fa fa-car"></i> <b>2020</b> <br> <i class="fa fa-road"></i>
+                                    20.000 km</p>
+                                <p class="product-price"> &#8364;2,450,000</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="product.php?category=6">
+                                <img src="db_auto_images/mercedes1.png" alt="Luxury Car 6">
+                                <p class="product-description">Mercedes-Benz AMG GT</p>
+                                <p class="year"> <i class="fa fa-car"></i> <b>2020</b> <br> <i class="fa fa-road"></i>
+                                    20.000 km</p>
+                                <p class="product-price">&#8364;179,814</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="product.php?category=7">
+                                <img src="db_auto_images/pagani1.png" alt="Luxury Car 7">
+                                <p class="product-description">Pagani Huayra</p>
+                                <p class="year"> <i class="fa fa-car"></i> <b>2020</b> <br> <i class="fa fa-road"></i>
+                                    20.000 km</p>
+                                <p class="product-price"> &#8364;2,809,144</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="product.php?category=8">
+                                <img src="db_auto_images/lambo_v1.png" alt="Luxury Car 8">
+                                <p class="product-description">Lamborghini Veneno</p>
+                                <p class="year"> <i class="fa fa-car"></i> <b>2020</b> <br> <i class="fa fa-road"></i>
+                                    20.000 km</p>
+                                <p class="product-price"> &#8364;8,891,642</p>
+                            </a>
+                        </div>
+            </section>
         </main>
         <footer>
             <div class="footer">
