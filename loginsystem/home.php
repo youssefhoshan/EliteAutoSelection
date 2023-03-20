@@ -13,12 +13,12 @@ require_once('../db_connect.php');
 <body>
         <header>
             <div class="navbar">
-                <a href="../homepage.html"><img src="../images/logo.png" class="logo"></a>
+                <a href="../homepage.php"><img src="../images/logo.png" class="logo"></a>
                 <div class="navbar-menu">
                     <ul>
-                        <li><a href="../homepage.html">Home</a></li>
+                        <li><a href="../homepage.php">Home</a></li>
                         <li><a href="../shoppagina.php">Assortiment</a></li>
-                        <li><a href="../informatie.html">Informatie</a></li>
+                        <li><a href="../informatie.php">Informatie</a></li>
                         <li><a href="home.php">Jouw Profiel</a></li>
                     </ul>
                 </div>
@@ -63,51 +63,73 @@ require_once('../db_connect.php');
         <footer>
         <div class="footer">
             <div class="column">
-                <div class="title">Mijn gegevens</div>
+                <div class="title">Koop advies</div>
                 <ul>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
+                    <a href="#" style="color:grey; text-decoration: none;">
+                        <li>Vergelijk modellen</li>
+                    </a>
+                    <a href="#" style="color:grey; text-decoration: none;">
+                        <li>Serviceprijzen</li>
+                    </a>
+                    <a href="#" style="color:grey; text-decoration: none;">
+                        <li>Diplomatic Sales</li>
+                    </a>
+                    <a href="#" style="color:grey; text-decoration: none;">
+                        <li>WLTP</li>
+                    </a>
                 </ul>
             </div>
             <div class="column">
-                <div class="title">Service</div>
+                <div class="title">Online Services</div>
                 <ul>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
+                    <a href="#" style="color:grey; text-decoration: none;">
+                        <li>Aanmelden e-mailnieuwsbrief</li>
+                    </a>
+                    <a href="#" style="color:grey; text-decoration: none;">
+                        <li>Afmelden voor informatie-updates</li>
+                    </a>
+                    <a href="#" style="color:grey; text-decoration: none;">
+                        <li>Apps</li>
+                    </a>
+                    <a href="#" style="color:grey; text-decoration: none;">
+                        <li>Contact</li>
+                    </a>
                 </ul>
             </div>
             <div class="column">
-                <div class="title">Contact</div>
+                <div class="title">Achter de schermen</div>
                 <ul>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
+                    <a href="#" style="color:grey; text-decoration: none;">
+                        <li>Autosport</li>
+                    </a>
+                    <a href="#" style="color:grey; text-decoration: none;">
+                        <li>Travel Club</li>
+                    </a>
                 </ul>
             </div>
             <div class="column">
-                <div class="title">Informatie</div>
+                <div class="title">Winkels in Nederland</div>
                 <ul>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
+                    <a href="#" style="color:grey; text-decoration: none;">
+                        <li>Amsterdam</li>
+                    </a>
+                    <a href="#" style="color:grey; text-decoration: none;">
+                        <li>Den Haag</li>
+                    </a>
+                    <a href="#" style="color:grey; text-decoration: none;">
+                        <li>Maastricht</li>
+                    </a>
                 </ul>
             </div>
             <div class="column">
-                <div class="title">Categorie&#235;n</div>
+                <div class="title">Volg ons</div>
                 <ul>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
-                    <li>Ipsum</li>
+                    <li><a href="https://www.facebook.com/example" style="color:grey; text-decoration: none;"><i
+                                class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/example" style="color:grey; text-decoration: none;"><i
+                                class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://twitter.com/example" style="color:grey; text-decoration: none;"><i
+                                class="fab fa-twitter"></i>Twitter</a></li>
                 </ul>
             </div>
         </div>

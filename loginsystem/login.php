@@ -45,12 +45,12 @@ if (isset($_POST['submit'])) {
 <body>
 <header>
             <div class="navbar">
-                <a href="../homepage.html"><img src="../images/logo.png" class="logo"></a>
+                <a href="../homepage.php"><img src="../images/logo.png" class="logo"></a>
                 <div class="navbar-menu">
                     <ul>
-                        <li><a href="../homepage.html">Home</a></li>
-                        <li><a href="../shoppagina.html">Assortiment</a></li>
-                        <li><a href="../informatie.html">Informatie</a></li>
+                        <li><a href="../homepage.php">Home</a></li>
+                        <li><a href="../shoppagina.php">Assortiment</a></li>
+                        <li><a href="../informatie.php">Informatie</a></li>
                         <li><a href="login.php">Login</a></li>
                     </ul>
                 </div>
