@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -37,7 +37,7 @@ body {
     padding: 3px;
     background-color: #000000;
     color: grey;
-    margin-top:20%;
+    margin-top: 10%;
 }
 
 .column {
@@ -77,8 +77,7 @@ li {
 .logo {
     height: 80px;
     cursor: pointer;
-    margin-left: 150px;
-    transform: scale(2.5);
+    margin-left: 75px;
 }
 
 .navbar-menu {
@@ -124,7 +123,7 @@ li {
 
 .content h1 {
     font-size: 70px;
-    
+
     display: flex;
     justify-content: center;
 }
@@ -343,7 +342,7 @@ label {
 
 input,
 .btn {
-    
+
     padding: 12px;
     border: none;
     border-radius: 4px;
@@ -487,12 +486,15 @@ input[type=submit]:hover {
 
 a.hometext {
     text-decoration: wavy;
-    color: black; /* initial color of the text */
-    transition: color 0.2s; /* smooth transition over 0.2 seconds */
+    color: black;
+    /* initial color of the text */
+    transition: color 0.2s;
+    /* smooth transition over 0.2 seconds */
 }
 
 a.hometext:hover {
-    color: crimson; /* color of the text when hovered over */
+    color: crimson;
+    /* color of the text when hovered over */
 }
 
 
@@ -704,88 +706,6 @@ button.button-reservering:hover {
     transition: 0.5s;
 }
 
-/* prijzen pagina */
-
-.xboxproductsbox {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    background-color: white;
-}
-
-.leftemptyspace {
-    display: flex;
-    flex: 1;
-    height: auto;
-    background-color: white;
-}
-
-.rightemptyspace {
-    display: flex;
-    flex: 1;
-    height: auto;
-    background-color: white;
-}
-
-.boxproductsbox {
-    display: flex;
-    flex: 5;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.productsbox {
-
-    width: 100%;
-    height: 300px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.products {
-    width: 300px;
-    background-color: white;
-    text-align: center;
-    text-decoration: none;
-    transition: transform .9s ease;
-
-}
-
-.products-image {
-    width: 300px;
-    height: 230px;
-    border-style: none;
-    background-color: white;
-}
-
-.products-text1 {
-    font-weight: 900;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 10px;
-    color: black;
-}
-
-.products-text2 {
-    text-align: center;
-    color: rgb(174, 174, 174);
-}
-
-
-.text-box {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.fietsimg1 {
-    display: flex;
-}
-
 /* Prijzen Pagina a la Youssef*/
 
 
@@ -871,9 +791,9 @@ button.button-reservering:hover {
 
 .containertest {
     display: flex;
-   background: black;
-   padding-top: 20px;
-   padding-bottom: 20px;
+    background: black;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .sectiontest1 {
@@ -887,10 +807,11 @@ button.button-reservering:hover {
     flex: 1;
     text-align: center;
     color: white;
+    margin-left: 5%;
 }
 
 .sectiontest1 img {
-    width: 95%;
+    width: 85%;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -996,11 +917,11 @@ button.button-reservering:hover {
     text-decoration: none;
 }
 
-.form-group{
+.form-group {
     margin-top: 20px;
 }
 
-.form-group label{
+.form-group label {
     color: black;
 }
 
@@ -1011,7 +932,7 @@ button.button-reservering:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 110vh;
 }
 
 .product-grid {
@@ -1033,7 +954,7 @@ button.button-reservering:hover {
 
 .product img {
     width: 100%;
-    
+
     border-radius: 10px;
 }
 
@@ -1050,19 +971,19 @@ button.button-reservering:hover {
 }
 
 /* test */
-  
-  .top-row {
+
+.top-row {
     display: flex;
     justify-content: center;
-  }
-  
-  .bottom-row {
+}
+
+.bottom-row {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-  }
-  
-  .product {
+}
+
+.product {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1075,27 +996,27 @@ button.button-reservering:hover {
     box-shadow: 5px 5px 10px crimson;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-  }
-  
-  .product:hover {
+}
+
+.product:hover {
     transform: scale(1.1);
-  }
-  
-  .product-image {
+}
+
+.product-image {
     width: 100%;
     height: 200px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     overflow: hidden;
-  }
-  
-  .product-image img {
+}
+
+.product-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .product-description {
+}
+
+.product-description {
     padding: 10px;
     margin-bottom: 5%;
     font-size: 18px;
@@ -1103,26 +1024,27 @@ button.button-reservering:hover {
     color: #fff;
     text-decoration: underline;
     text-decoration-color: crimson;
-  }
-  
-  .product-price {
-    
+}
+
+.product-price {
+
     font-size: 16px;
     color: #fff;
     text-decoration: underline;
     margin-bottom: 2%;
-  }
-  
-  .price-column-shop {
+}
+
+.price-column-shop {
     display: flex;
-    margin-top: 15%;
+    padding-top: 15%;
     text-align: center;
-    margin-left: 10%;
+    padding-left: 10%;
+    padding-bottom: 15%;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-#myGallery{
+#myGallery {
     width: 500px;
     height: 300px;
     overflow: hidden;
@@ -1139,7 +1061,9 @@ button.button-reservering:hover {
 }
 
 
-.b1, .b2, .b3{
+.b1,
+.b2,
+.b3 {
     display: flex;
     background-color: rgb(255, 255, 255);
     width: 28px;
@@ -1148,81 +1072,86 @@ button.button-reservering:hover {
     margin-left: 20px;
     cursor: pointer;
 
-  }
+}
 
 
-  
-.container-shop{
+
+.container-shop {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container-shop-test{
+
+.container-shop-test {
     display: flex;
     justify-content: center;
     align-items: center;
     background: black;
 }
 
-.content-shop{
+.content-shop {
     display: flex;
     justify-content: center;
     background: #00000082;
 }
-  
-  #second, #third {
+
+#second,
+#third {
     display: none
-  }
-  
-.container-purchase {
-    
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        background: black;
-        
 }
- 
-.h1-product{
+
+.container-purchase {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: white
+
+}
+
+.h1-product {
     display: flex;
     justify-content: center;
     color: white;
     margin-bottom: 5px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     text-decoration: underline;
     text-decoration-color: crimson;
 }
 
-.kilometer{
+.kilometer {
     padding: 10px;
     font-size: 14px;
     color: #fff;
     text-decoration: underline;
 }
 
-.year{
+.year {
     margin-bottom: 5%;
     font-size: 12px;
     color: #fff;
     text-decoration: underline;
     text-decoration-color: crimson;
 }
-.first{
-    height: 450px;
-    width: 100%;
-}
-.second{
-    height: 450px;
-    width: 100%;
-}
-.third{
+
+.first {
     height: 450px;
     width: 100%;
 }
 
-.button-back-product{
+.second {
+    height: 450px;
+    width: 100%;
+}
+
+.third {
+    height: 450px;
+    width: 100%;
+}
+
+.button-back-product {
     display: flex;
     padding: 1px;
     color: white;
@@ -1235,8 +1164,10 @@ button.button-reservering:hover {
     border-width: 1px;
 }
 
-.button-back-product:hover{
-   border-color: crimson;
+.button-back-product:hover {
+    background-color: crimson;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
 
 }
 
@@ -1245,45 +1176,46 @@ button.button-reservering:hover {
 ::-webkit-scrollbar {
     width: 14px;
     height: 8px;
-  }
-  
-  /* background color of the scrollbar track */
-  ::-webkit-scrollbar-track {
+}
+
+/* background color of the scrollbar track */
+::-webkit-scrollbar-track {
     background: #252525;
-  }
-  
-  /* color of the scrollbar thumb */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* color of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
     background-color: crimson;
     border-radius: 10px;
     border: 2px solid black;
-  }
-  
-  /* color of the scrollbar thumb when hovering */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* color of the scrollbar thumb when hovering */
+::-webkit-scrollbar-thumb:hover {
     background-color: #555;
-  }
+}
 
 
 
-  .typing-header {
+.typing-header {
     overflow: hidden;
     white-space: nowrap;
     font-size: 2rem;
     animation: typing 1s steps(500) forwards;
     animation-delay: 1s;
-  }
-  
-  @keyframes typing {
+}
+
+@keyframes typing {
     from {
-      width: 0;
+        width: 0;
     }
+
     to {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-.info-h1{
+}
+
+.info-h1 {
     text-align: center;
     color: white;
     background: black;
@@ -1292,7 +1224,134 @@ button.button-reservering:hover {
 }
 
 .footer a:hover {
-    opacity: 0.7;
-    transition: 0.2s;
-  }
-  
+    opacity: 0.4;
+    transition: 0.4s;
+}
+
+/* Toegevoegd van Youssef */
+
+.p-price {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    color: #20c044;
+    margin-bottom: 1%;
+}
+
+.form-products-back:hover {
+    color: crimson;
+
+}
+
+
+.accordion-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+.vraag {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    opacity: 80%;
+
+}
+
+.antwoord {
+    width: 100%;
+    height: auto;
+    display: none;
+    background-color: var(--wit);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.vraag label {
+    width: 100%;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    transition: background-color ease 2.10s;
+}
+
+.vraag [type="checkbox"] {
+    display: none;
+}
+
+.vraag [type="checkbox"]:checked+label {
+    background-color: #fff;
+    color: crimson;
+    border-top: 4px solid crimson;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.vraag [type="checkbox"]:checked+label+.antwoord {
+    display: block;
+}
+
+.accordion-h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    margin-bottom: 2%;
+}
+
+:root {
+    --dominante: black;
+    --secundaire: crimson;
+    --accent: crimson;
+    --forms: #e1e6ee;
+    --wit: #ffff;
+    --tekstkleur: #ffffff;
+    font-size: 16px;
+}
+
+/* toegevoegd door patrick voor product pagina & homepage */
+
+.p-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url(./images/home-choose.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+}
+
+.containertext1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 0 0 #000
+}
+
+.video-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
