@@ -42,12 +42,12 @@
                     <a href="informatie.php"><img src="images/winkel.jpg" alt="image1" class="winkel"></a>
                     <br>
                     <h1>Kalverstraat 74</h1> <br>
-                    <p>Op de kalverstraat kunt u onze showroom bezoeken en uw auto zelf ontwerpen!</p>
+                    <p>Op de kalverstraat kunt u onze showroom bezoeken en uw auto in het echt zien!</p>
                 </div>
                 <div class="sectiontest2">
                     <a href="shoppagina.php"> <img src="images/lambo.jpg" alt="image2" class="flower"></a>
-                    <h1>Configureer Nu</h1>
-                    <p>Kunt u toch niet wachten? <br> Configureer nu al uw droom auto via onze Online Showroom</p>
+                    <h1>Vind Uw Droom</h1>
+                    <p>Kunt u toch niet wachten? <br> Vind nu al uw droom auto via onze Online Showroom</p>
                 </div>
             </div>
             <div class="container2">

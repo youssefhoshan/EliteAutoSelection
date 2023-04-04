@@ -20,10 +20,9 @@
             </div>
         </header>
         <main class="thankspar">
-            <h1 class="header-titel-thanks">Super bedankt voor je bestelling!</h1>
-            <p class="p-thanks">Je hoort binnen enkele minuten een bestellingsconfirmatie te ontvangen. <br> Zodra de
-                factuur is betaald mailen wij je direct met een confirmatie!</p>
-            <a class="buybutton" href="informatie.html"><button class="buybuttonthanks" type="button"><span></span>MEER
+            <h1 class="header-titel-thanks">Super bedankt voor uw aanvraag!</h1>
+            <p class="p-thanks">U hoort binnen enkele minuten of u op de dag kunt langs komen voor een proefrit! vergeet uw rijbewijs niet!</p>
+            <a class="buybutton" href="informatie.php"><button class="buybuttonthanks" type="button"><span></span>MEER
                     INFO</button></a>
         </main>
 

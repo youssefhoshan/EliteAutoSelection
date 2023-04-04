@@ -1,0 +1,18 @@
+.container{
+  width: 20rem;
+  height: 20rem;
+  background: white;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.container div{
+  min-width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  color: black;
+  scroll-snap-align: center;
+}

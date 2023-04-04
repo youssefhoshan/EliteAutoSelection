@@ -37,7 +37,7 @@ body {
     padding: 3px;
     background-color: #000000;
     color: grey;
-    margin-top: 10%;
+
 }
 
 .column {
@@ -389,16 +389,14 @@ input[type=submit]:hover {
 }
 
 
-.col {
-    float: left;
-    width: 275px;
-    margin: auto;
-    padding: 0 50px;
-    margin-top: 6px;
+
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
-
-
-
 .row:after {
     content: "";
     display: table;
@@ -436,7 +434,7 @@ input[type=submit]:hover {
     margin: auto;
     margin-bottom: 50px;
     width: 50%;
-    background-color: crimson;
+    background-color: #740016;
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -918,7 +916,20 @@ button.button-reservering:hover {
 }
 
 .form-group {
-    margin-top: 20px;
+    display: flex;
+    margin-top: 1%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.h1-register-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
 }
 
 .form-group label {
@@ -1086,7 +1097,7 @@ button.button-reservering:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: transparent;
 }
 
 .content-shop {
@@ -1106,7 +1117,7 @@ button.button-reservering:hover {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: white
+    background: #00000082;
 
 }
 
@@ -1201,7 +1212,7 @@ button.button-reservering:hover {
     overflow: hidden;
     white-space: nowrap;
     font-size: 2rem;
-    animation: typing 1s steps(500) forwards;
+    animation: typing 1s forwards;
     animation-delay: 1s;
 }
 
@@ -1234,11 +1245,11 @@ button.button-reservering:hover {
     text-align: center;
     display: flex;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: underline;
-    text-decoration-color: crimson;
-    color: #20c044;
+    text-decoration-color: white;
+    color: white;
     margin-bottom: 1%;
 }
 
@@ -1322,6 +1333,7 @@ button.button-reservering:hover {
     flex-direction: row;
     justify-content: center;
     width: 50%;
+    color: white;
 }
 
 .container2 {
@@ -1352,6 +1364,110 @@ button.button-reservering:hover {
     width: 100%;
     height: 100%;
     background-color: black;
+ 
+  
+}
+
+#favorite-btn {
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #favorite-btn.clicked {
+    background-color: #333;
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  #favorite-btn:hover{
+    color: black;
+    background-color: rgb(158, 157, 157);
+    transition: 0.5s;
+  }
+
+  #boeken-btn:hover{
+    color: black;
+    background-color: rgb(158, 157, 157);
+    transition: 0.5s;
+  }
+  
+  .p-jaartal-km{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-decoration-color: rgb(255 255 255 / 44%);
+    margin-bottom: 2%;
+  }
+
+  .p-jaartal-km-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.597);
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+  }
+
+  hr {
+    border: 1px solid white;
+    width: 50%;
+    margin-bottom: 2%;
+  }
+
+  #boeken-btn {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .a-button-product{
+    color: #000;
+    text-decoration: none;
+
+  }
+
+  .form-afspraak{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000000a3;
+  }
+
+  .form-afspraak input{
+    width: 50%;
+    text-align: center;
+  }
+
+  .h1-afspraak{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    align-items: center;
+    color: white;
+  }
+
+  .thankspar-afspraak {
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+}
+
+.form-register-1{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }

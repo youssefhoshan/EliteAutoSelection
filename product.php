@@ -9,6 +9,8 @@ require_once('db_connect.php');
     <title>Prijzen</title>
     <script src="./js/carrousel.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script src="./js/test.js" defer></script>
+    <script src="./js/favourite.js" defer></script>
 </head>
 
 <body>
@@ -40,6 +42,8 @@ if ($select_products->rowCount() > 0) {
     <input type="hidden" name="productcode" value="<?= $fetch_product['productcode']; ?>">
     <input type="hidden" name="name" value="<?= $fetch_product['product']; ?>">
     <input type="hidden" name="price" value="<?= $fetch_product['prijs']; ?>">
+    <input type="hidden" name="jaartal" value="<?= $fetch_product['jaartal']; ?>">
+    <input type="hidden" name="kilometers" value="<?= $fetch_product['kilometers']; ?>">
     <h1 class="h1-product"><?= $fetch_product['product']; ?></h1>
     <a href="quick_view.php?pid=<?= $fetch_product['productcode']; ?>" class="fas fa-eye"></a>
     <div class="content-shop">
@@ -47,22 +51,28 @@ if ($select_products->rowCount() > 0) {
         <div id="second"><img class="second" src="./db_auto_images/<?= $fetch_product['foto2']; ?>"/> </div>
         <div id="third"><img class="third" src="./db_auto_images/<?= $fetch_product['foto3']; ?>"/> </div>
     </div>
-
-      <div class="container-purchase">
-      <div class="container-shop-test">
-        <button class="b1" id="b1" onClick="myFunction()">1</button>
-        <button class="b2" id="b2" onClick="myFunction2()">2</button>
-        <button class="b3" id="b3" onClick="myFunction3()">3</button>
-    </div>
-      <div class="p-price"><?= $fetch_product['prijs']; ?></div>
-      <div class="p-description"><?= $fetch_product['omschrijving']; ?></div>
-      <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
-      <div class="flex">
-         <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
-      </div>
-            <input type="submit" value="add to cart" class="btn" name="add_to_cart">
-        </div>
     </form>
+    <div class="container-purchase">
+      <div class="container-shop-test">
+        <button class="b1" id="b1" onClick="myFunction()"></button>
+        <button class="b2" id="b2" onClick="myFunction2()"></button>
+        <button class="b3" id="b3" onClick="myFunction3()"></button>
+    </div>
+    <div class="p-price"><?= $fetch_product['prijs']; ?></div>
+    <hr>
+      
+      <div class="p-jaartal-km-desc">Jaartal - Kilometerstand</div>
+        <div class="p-jaartal-km"><?= $fetch_product['jaartal']; ?> - <?= $fetch_product['kilometers']; ?> </div>
+        <hr>
+      <div class="p-description"><?= $fetch_product['omschrijving']; ?></div>
+      <div class="btn-product-container">
+        <button id="favorite-btn">Voeg Toe Aan Favorieten</button>
+        <button id="boeken-btn"> <a class="a-button-product" href="test.php">Boek een rit!</button>
+      </div>
+    
+      <i class="fas fa-clock"></i>
+      
+        </div>
         <?php
     }
 } else {
