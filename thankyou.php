@@ -11,12 +11,26 @@
     <header>
             <div class="navbar">
                 <a href="homepage.php"><img src="./images/logo.png" class="logo"></a>
-                <ul>
-                    <li><a href="homepage.php">Home</a></li>
-                    <li><a href="shoppagina.php">Assortiment</a></li>
-                    <li><a href="informatie.php">Informatie</a></li>
-                    <li><a href="./loginsystem/login.php">Login</a></li>
-                </ul>
+                <div class="navbar-menu">
+                    <ul>
+                        <li><a href="homepage.php">Home</a></li>
+                        <li><a href="shoppagina.php">Assortiment</a></li>
+                        <li><a href="informatie.php">Informatie</a></li>
+                        <?php
+                        if (isset($_SESSION["voornaam"])) {
+                            ?>
+                            <li><a href="home.php"><?php echo $_SESSION["voornaam"]; ?></a></li>
+                            <li><a href="logout.php">Logout</a></li>
+                            <?php
+                        } else {
+                            ?>
+                        <li><a href="register.php">Registreer</a></li>
+                        <li><a href="login.php">Login</a></li>
+                            <?php
+                        }
+                        ?>
+                    </ul>
+                </div>
             </div>
         </header>
         <main class="thankspar">

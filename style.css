@@ -1149,6 +1149,8 @@ button.button-reservering:hover {
     width: 100%;
 }
 
+
+
 .button-back-product {
     display: flex;
     padding: 1px;
@@ -1341,4 +1343,48 @@ button.button-reservering:hover {
     color: white;
     font-size: 60px;
     text-shadow: 1px 0 0 #000
+}
+
+.carousel-container .carousel-next,
+.carousel-container .carousel-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-container .carousel-next:hover,
+.carousel-container .carousel-prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-container .carousel-next {
+    right: 0;
+}
+
+.carousel-container .carousel-prev {
+    left: 0;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: all 1s;
+}
+
+.carousel-images img {
+    flex: 1;
+    margin-right: 10px;
+    display: none;
 }

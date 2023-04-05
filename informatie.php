@@ -1,3 +1,7 @@
+<?php
+session_start();
+require_once('db_connect.php');
+?>
 <html>
 
 
@@ -12,15 +16,27 @@
 
 <body>
     <div class="banner">
-        <header>
+    <header>
             <div class="navbar">
                 <a href="homepage.php"><img src="./images/logo.png" class="logo"></a>
                 <div class="navbar-menu">
                     <ul>
                         <li><a href="homepage.php">Home</a></li>
                         <li><a href="shoppagina.php">Assortiment</a></li>
-                        <li><a href="Informatie.php">FAQ</a></li>
-                        <li><a href="./loginsystem/login.php">Login</a></li>
+                        <li><a href="informatie.php">Informatie</a></li>
+                        <?php
+                        if (isset($_SESSION["voornaam"])) {
+                            ?>
+                            <li><a href="home.php"><?php echo $_SESSION["voornaam"]; ?></a></li>
+                            <li><a href="logout.php">Logout</a></li>
+                            <?php
+                        } else {
+                            ?>
+                        <li><a href="register.php">Registreer</a></li>
+                        <li><a href="login.php">Login</a></li>
+                            <?php
+                        }
+                        ?>
                     </ul>
                 </div>
             </div>
