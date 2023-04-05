@@ -24,7 +24,7 @@ require_once('db_connect.php');
                         <?php
                         if (isset($_SESSION["voornaam"])) {
                             ?>
-                            <li><a href="home.php"><?php echo $_SESSION["voornaam"]; ?></a></li>
+                            <li><a href="profile.php"><?php echo $_SESSION["voornaam"]; ?></a></li>
                             <li><a href="logout.php">Logout</a></li>
                             <?php
                         } else {

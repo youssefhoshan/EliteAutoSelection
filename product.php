@@ -7,9 +7,10 @@ require_once('db_connect.php');
 
 <head>
     <title>Prijzen</title>
+    <script src="./js/carrousel.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <script src="./js/carrousel.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/test.js" defer></script>
+    <script src="./js/favourite.js" defer></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@ require_once('db_connect.php');
                         <?php
                         if (isset($_SESSION["voornaam"])) {
                             ?>
-                            <li><a href="home.php"><?php echo $_SESSION["voornaam"]; ?></a></li>
+                            <li><a href="profile.php"><?php echo $_SESSION["voornaam"]; ?></a></li>
                             <li><a href="logout.php">Logout</a></li>
                             <?php
                         } else {
@@ -55,39 +56,37 @@ if ($select_products->rowCount() > 0) {
     <input type="hidden" name="productcode" value="<?= $fetch_product['productcode']; ?>">
     <input type="hidden" name="name" value="<?= $fetch_product['product']; ?>">
     <input type="hidden" name="price" value="<?= $fetch_product['prijs']; ?>">
-    <input type="hidden" name="image1" value="<?= $fetch_product['foto1']; ?>">
-    <input type="hidden" name="image2" value="<?= $fetch_product['foto2']; ?>">
-    <input type="hidden" name="image3" value="<?= $fetch_product['foto3']; ?>">
+    <input type="hidden" name="jaartal" value="<?= $fetch_product['jaartal']; ?>">
+    <input type="hidden" name="kilometers" value="<?= $fetch_product['kilometers']; ?>">
     <h1 class="h1-product"><?= $fetch_product['product']; ?></h1>
     <a href="quick_view.php?pid=<?= $fetch_product['productcode']; ?>" class="fas fa-eye"></a>
-    <div class="carousel">
-        <div class="carousel-images">
-        <img src="./db_auto_images/<?= $fetch_product['foto1']; ?>"/> </div>
-        <img src="./db_auto_images/<?= $fetch_product['foto2']; ?>"/> </div>
-        <img src="./db_auto_images/<?= $fetch_product['foto3']; ?>"/> </div>
+    <div class="content-shop">
+        <div id="first"><img class="first" src="./db_auto_images/<?= $fetch_product['foto1']; ?>"/> </div>
+        <div id="second"><img class="second" src="./db_auto_images/<?= $fetch_product['foto2']; ?>"/> </div>
+        <div id="third"><img class="third" src="./db_auto_images/<?= $fetch_product['foto3']; ?>"/> </div>
     </div>
-    <div class="carousel-prev"></div>
-    <div class="carousel-next"></div>
+    </form>
+    <div class="container-purchase">
+      <div class="container-shop-test">
+        <button class="b1" id="b1" onClick="myFunction()"></button>
+        <button class="b2" id="b2" onClick="myFunction2()"></button>
+        <button class="b3" id="b3" onClick="myFunction3()"></button>
     </div>
     <div class="p-price"><?= $fetch_product['prijs']; ?></div>
-    <div class="p-description"><?= $fetch_product['omschrijving']; ?></div>
-      <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
-      <div class="flex">
-         <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+    <hr>
+      
+      <div class="p-jaartal-km-desc">Jaartal - Kilometerstand</div>
+        <div class="p-jaartal-km"><?= $fetch_product['jaartal']; ?> - <?= $fetch_product['kilometers']; ?> </div>
+        <hr>
+      <div class="p-description"><?= $fetch_product['omschrijving']; ?></div>
+      <div class="btn-product-container">
+        <button id="favorite-btn">Voeg Toe Aan Favorieten</button>
+        <button id="boeken-btn"> <a class="a-button-product" href="test.php">Boek een rit!</button>
       </div>
-      <div class="container-purchase">
-            <label for="product">Select Product:</label>
-                <select id="product" name="product">
-                    <option value="Product 1">Bouquette</option>
-                    <option value="Product 2">Special Bouquette</option>
-                    <option value="Product 3">Premium Bouquette</option>
-                </select>
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1">
-            <input type="submit" value="Purchase">
+    
+      <i class="fas fa-clock"></i>
+      
         </div>
-      <input type="submit" value="add to cart" class="btn" name="add_to_cart">
-    </form>
         <?php
     }
 } else {
@@ -98,7 +97,6 @@ if ($select_products->rowCount() > 0) {
 </main>
 
 <?php include 'components/footer.php'; ?>
-
 </body>
 
 </html>

@@ -24,7 +24,7 @@ require_once('db_connect.php');
                         <?php
                         if (isset($_SESSION["voornaam"])) {
                             ?>
-                            <li><a href="home.php"><?php echo $_SESSION["voornaam"]; ?></a></li>
+                            <li><a href="profile.php"><?php echo $_SESSION["voornaam"]; ?></a></li>
                             <li><a href="logout.php">Logout</a></li>
                             <?php
                         } else {
@@ -58,16 +58,21 @@ require_once('db_connect.php');
                     <a href="informatie.php"><img src="images/winkel.jpg" alt="image1" class="winkel"></a>
                     <br>
                     <h1>Kalverstraat 74</h1> <br>
-                    <p>Op de kalverstraat kunt u onze showroom bezoeken en uw auto zelf ontwerpen!</p>
+                    <p>Op de kalverstraat kunt u onze showroom bezoeken en uw auto in het echt zien!</p>
                 </div>
                 <div class="sectiontest2">
                     <a href="shoppagina.php"> <img src="images/lambo.jpg" alt="image2" class="flower"></a>
-                    <h1>Configureer Nu</h1>
-                    <p>Kunt u toch niet wachten? Configureer nu al uw droom auto via onze Online Showroom</p>
+                    <h1>Vind Uw Droom</h1>
+                    <p>Kunt u toch niet wachten? <br> Vind nu al uw droom auto via onze Online Showroom</p>
                 </div>
             </div>
             <div class="container2">
-                <h1 class="containertext1">Find your dream car</h1>
+                <h1 class="containertext1">Vind uw droom auto!</h1>
+            </div>
+            <div class="video-home">
+                <video autoplay muted loop id="myVideo">
+                    <source src="images/video.mp4" type="video/mp4">
+                </video>
             </div>
         </main>
     </div>

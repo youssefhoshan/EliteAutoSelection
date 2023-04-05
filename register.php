@@ -97,7 +97,7 @@ if (isset($_POST['submit'])) {
 <body>
 <header>
             <div class="navbar">
-                <a href="homepage.php"><img src="images/logo.png" class="logo"></a>
+                <a href="homepage.php"><img src="./images/logo.png" class="logo"></a>
                 <div class="navbar-menu">
                     <ul>
                         <li><a href="homepage.php">Home</a></li>
@@ -106,7 +106,7 @@ if (isset($_POST['submit'])) {
                         <?php
                         if (isset($_SESSION["voornaam"])) {
                             ?>
-                            <li><a href="home.php"><?php echo $_SESSION["voornaam"]; ?></a></li>
+                            <li><a href="profile"><?php echo $_SESSION["voornaam"]; ?></a></li>
                             <li><a href="logout.php">Logout</a></li>
                             <?php
                         } else {
