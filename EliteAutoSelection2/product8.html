@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title>Prijzen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="carrousel.js" defer></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+</head>
+
+<body>
+    <div class="banner">
+        <header>
+            <div class="navbar">
+                <a href="homepage.html"><img src="./images/logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="shoppagina.html">Assortiment</a></li>
+                    <li><a href="informatie.html">Informatie</a></li>
+                    <li><a href="./loginsystem/login.php">Login</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+
+            <h1 class="h1-product">Lamborghini Veneno</h1>
+            <div class="body-container">
+                
+
+                    <div class="content-shop">
+                    <div id="first"><img class="first" src="./images/bugatti/1.png"/> </div>
+                    <div id="second"><img class="second" src="./images/bugatti/2.png"/> </div>
+                    <div id="third"><img class="third" src="./images/bugatti/3.png"/> </div>
+                </div>
+
+                <div class="container-shop-test">
+                    <button class="b1" id="b1" onClick="myFunction()">1</button>
+                    <button class="b2" id="b2" onClick="myFunction2()">2</button>
+                    <button class="b3" id="b3" onClick="myFunction3()">3</button>
+                  </div>
+
+                  <div class="container-purchase">
+                    <form action="purchase.php" method="post">
+
+                        <label for="product">Select Product:</label>
+                        <select id="product" name="product">
+                            <option value="Product 1">Bouquette</option>
+                            <option value="Product 2">Special Bouquette</option>
+                            <option value="Product 3">Premium Bouquette</option>
+                        </select>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1">
+                        <input type="submit" value="Purchase">
+                    </form>
+                   
+                  </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer">
+          <div class="column">
+            <div class="title">Koop advies</div>
+            <ul>
+              <a href="#" style="color:grey; text-decoration: none;"><li>Vergelijk modellen</li></a> 
+              <a href="#" style="color:grey; text-decoration: none;"><li>Serviceprijzen</li></a>
+              <a href="#" style="color:grey; text-decoration: none;"><li>Diplomatic Sales</li></a>
+              <a href="#" style="color:grey; text-decoration: none;"><li>WLTP</li></a>
+            </ul>
+          </div>
+          <div class="column">
+            <div class="title">Online Services</div>
+            <ul>
+              <a href="#" style="color:grey; text-decoration: none;"><li>Aanmelden e-mailnieuwsbrief</li></a>
+              <a href="#" style="color:grey; text-decoration: none;"><li>Afmelden voor informatie-updates</li></a>
+              <a href="#" style="color:grey; text-decoration: none;"><li>Apps</li></a>
+              <a href="#" style="color:grey; text-decoration: none;"><li>Contact</li></a>
+            </ul>
+          </div>
+          <div class="column">
+            <div class="title">Achter de schermen</div>
+            <ul>
+              <a href="#" style="color:grey; text-decoration: none;"><li>Autosport</li></a>
+              <a href="#" style="color:grey; text-decoration: none;"><li>Travel Club</li></a>
+            </ul>
+          </div>
+          <div class="column">
+            <div class="title">Winkels in Nederland</div>
+            <ul>
+              <a href="#" style="color:grey; text-decoration: none;"><li>Amsterdam</li></a>
+              <a href="#" style="color:grey; text-decoration: none;"><li>Den Haag</li></a> 
+              <a href="#" style="color:grey; text-decoration: none;"><li>Maastricht</li></a> 
+            </ul>
+          </div>
+          <div class="column">
+            <div class="title">Volg ons</div>
+            <ul>
+              <li><a href="https://www.facebook.com/example" style="color:grey; text-decoration: none;"><i class="fab fa-facebook-f"></i> Facebook</a></li> 
+              <li><a href="https://www.instagram.com/example" style="color:grey; text-decoration: none;"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="https://twitter.com/example" style="color:grey; text-decoration: none;"><i class="fab fa-twitter"></i>Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+
+</body>
+
+</html>
